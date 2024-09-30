@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--When Button is not enabled -->
+    <item android:state_checked="false">
+        <shape android:shape="rectangle">
+            <stroke android:width="3dp"
+                android:color="@color/clr_extra_light_gray" />
+            <solid android:color="@color/clr_extra_light_gray" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+    <!--When Button is in pressed state -->
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="3dp"
+                android:color="@color/color_blue_light" />
+            <solid android:color="@color/color_blue_light" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+
+
+</selector>

@@ -1,0 +1,80 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.tigwal.ui.view_model.order_receive.OrderReceiveViewModel" />
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/background_receive_order"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLaboratory"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_200"
+            android:layout_gravity="center"
+            android:background="@drawable/img_order_success"
+            android:backgroundTint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtOrderRecieved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/odrreceived"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_20"
+            android:text="@string/sendOrder"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOrderDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_20"
+            android:linksClickable="true"
+            android:padding="@dimen/dp_10"
+            android:text="@string/odrredetails"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:background="@drawable/background_fill_corner_gray"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_45"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_45"
+            android:paddingBottom="@dimen/dp_10"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/home"
+            android:textColor="@color/color_primary_dark"
+            android:textSize="@dimen/sp_12"
+            android:textStyle="bold" />
+    </LinearLayout>
+</layout>

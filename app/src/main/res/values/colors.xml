@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#63CBEC</color>
+    <color name="color_primary_dark">#2972B4</color>
+    <color name="color_primary_light">#9ADFF4</color>
+    <color name="colorAccent">#63CBEC</color>
+    <color name="red_dark">#EC1B3F</color>
+    <color name="green_light">#17BB2D</color>
+    <color name="shadow">#6F6C5E48</color>
+    <color name="grey">#AFAFAF</color>
+    <color name="blue">#707ABC</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent_color_full">#00FFFFFF</color>
+    <color name="color_blue_dark">#2972B4</color>
+    <color name="color_blue_light">#63CBEC</color>
+    <color name="color_dark_gray">#676767</color>
+    <color name="color_gray_light">#B5B5B5</color>
+    <color name="clr_extra_light_gray">#E5E5E5</color>
+    <color name="bg_start_color">#3A5DA9</color>
+    <color name="clr_light_white">#F8F9FB</color>
+    <color name="transparent_black_30">#0D000000</color>
+    <color name="clr_gray">#4B4B4B</color>
+    <color name="cart_blue_transparent_light">#C6AAE0F1</color>
+    <color name="color_orange">#FF9A06</color>
+    <color name="progress_transparent_color">#80000000</color>
+    <color name="color_transparent_25">#A60F0F0F</color>
+    <color name="clr_dark_black">#161616</color>
+    <color name="color_blue_transparent">#c6d0e6</color>
+    <color name="color_chat_time_color">#CCCCCC</color>
+    <color name="light_border">#FFFFFF</color>
+
+</resources>

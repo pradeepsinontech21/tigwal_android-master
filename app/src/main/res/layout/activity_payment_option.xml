@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.tigwal.ui.view_model.payment_option.PaymentOptionViewModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clr_light_white"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_20">
+
+        <include
+            android:id="@+id/toolBar"
+            layout="@layout/layout_toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:background="@drawable/background_profile_edittext"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/dp_5"
+                        android:paddingTop="@dimen/dp_10"
+                        android:paddingEnd="@dimen/dp_5"
+                        android:paddingBottom="@dimen/dp_10"
+                        android:visibility="gone">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/et_coupon_code"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:fontFamily="@font/poppins_regular"
+                            android:hint="@string/enter_coupon_code"
+                            android:inputType="text"
+                            android:minLines="1"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/sp_10" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/check"
+                            android:textColor="@color/color_blue_light"
+                            android:textSize="@dimen/sp_10" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:background="@drawable/border_white_text_box_bg"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvPaymentSummary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold_midium_new"
+                            android:padding="@dimen/dp_10"
+                            android:text="@string/payment_summary"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_12" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_5"
+                            android:layout_marginEnd="@dimen/dp_5"
+                            android:padding="@dimen/dp_5">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvNoOfItems"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/no_of_items"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp_12" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txt_number_of_item"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:paddingEnd="@dimen/dp_10"
+                                android:paddingStart="@dimen/dp_10"
+                                android:text="@string/four"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_5"
+                            android:layout_marginEnd="@dimen/dp_5"
+                            android:padding="@dimen/dp_5">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvPrice"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/price"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp_12" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txt_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:paddingStart="@dimen/dp_10"
+                                android:paddingEnd="@dimen/dp_10"
+                                android:text="@string/sample_price"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp_12" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_5"
+                            android:layout_marginEnd="@dimen/dp_5"
+                            android:padding="@dimen/dp_5">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvTaxes"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/taxes"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp_12" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txt_taxes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:paddingEnd="@dimen/dp_10"
+                                android:paddingStart="@dimen/dp_10"
+                                android:text="0.00"
+                                android:textColor="@color/red_dark"
+                                android:textSize="@dimen/sp_12" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llDiscount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_5"
+                            android:layout_marginEnd="@dimen/dp_5"
+                            android:padding="@dimen/dp_5"
+                            android:visibility="gone">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvDiscount"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/discount"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp_12" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtDiscount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:paddingEnd="@dimen/dp_10"
+                                android:paddingStart="@dimen/dp_10"
+
+                                android:text="-0.00"
+                                android:textColor="@color/green_light"
+                                android:textSize="@dimen/sp_12" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_5"
+                            android:layout_marginEnd="@dimen/dp_5"
+                            android:padding="@dimen/dp_5">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvTotalPrice"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/total_price"
+                                android:textColor="@color/color_blue_light"
+                                android:textSize="@dimen/sp_12" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtTotalPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:paddingEnd="@dimen/dp_10"
+                                android:paddingStart="@dimen/dp_10"
+                                android:text="@string/sample_price"
+                                android:textColor="@color/color_blue_light"
+                                android:textSize="@dimen/sp_12" />
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_pay_now"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_10"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:layout_marginBottom="@dimen/dp_20"
+                            android:background="@drawable/button_bg"
+                            android:fontFamily="@font/poppins_medium"
+                            android:minHeight="@dimen/dp_40"
+                            android:text="@string/pay_now"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_12" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

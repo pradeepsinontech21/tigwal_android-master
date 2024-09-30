@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp_25"
+    android:layout_marginEnd="@dimen/dp_25"
+    android:background="@drawable/border_dialoge_view"
+    android:gravity="center"
+    android:minHeight="@dimen/dp_140"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_15"
+    android:paddingBottom="@dimen/dp_15">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_25"
+        android:fontFamily="@font/poppins_bold_midium_new"
+        android:gravity="center"
+        android:maxLines="3"
+        android:text="@string/add_note"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etAddMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:background="@drawable/border_gray_edittext_bg"
+        android:minHeight="@dimen/dp_100"
+        android:maxHeight="@dimen/dp_100"
+        android:inputType="textMultiLine"
+        android:imeOptions="actionDone"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="top|start"
+        android:hint="@string/write_notes_here"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="@dimen/sp_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_25"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtSubmit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_weight="1"
+            android:background="@drawable/border_fill_blue_theme"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_8"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:background="@drawable/border_unfill_blue"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_8"
+            android:text="@string/cancel"
+            android:textColor="@color/color_blue_light"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.tigwal.ui.view_model.setting.SettingViewModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/rlSetting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clr_light_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/dp_10">
+
+                <include
+
+                    android:id="@+id/toolBar"
+                    layout="@layout/layout_toolbar" />
+            </LinearLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/llAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rlSignin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dp_15"
+                        android:paddingTop="@dimen/dp_20"
+                        android:paddingEnd="@dimen/dp_15"
+                        android:paddingBottom="@dimen/dp_15"
+                        android:visibility="gone">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvSignin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/signin"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivSignin"
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/arrow_next"
+                            android:tint="@color/white"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dp_15"
+                        android:paddingTop="@dimen/dp_20"
+                        android:paddingEnd="@dimen/dp_15"
+                        android:paddingBottom="@dimen/dp_15">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvProfile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/profile"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivProfile"
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/arrow_next"
+                            android:tint="@color/white"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlChangePassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dp_15"
+                        android:paddingTop="@dimen/dp_20"
+                        android:paddingEnd="@dimen/dp_15"
+                        android:paddingBottom="@dimen/dp_15"
+                        android:visibility="gone">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_change_password"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/change_password"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivChangePassword"
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/arrow_next"
+                            android:tint="@color/white"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlChangeLanguage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dp_15"
+                        android:paddingTop="@dimen/dp_20"
+                        android:paddingEnd="@dimen/dp_15"
+                        android:paddingBottom="@dimen/dp_15">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtChangeLang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/change_language"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivChangeLang"
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/arrow_next"
+                            android:tint="@color/white"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlSupportChat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dp_15"
+                        android:paddingTop="@dimen/dp_20"
+                        android:paddingEnd="@dimen/dp_15"
+                        android:paddingBottom="@dimen/dp_15">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txt_support_chat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/support_chat"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivSupportChat"
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/arrow_next"
+                            android:tint="@color/white"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlFaq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dp_15"
+                        android:paddingTop="@dimen/dp_20"
+                        android:paddingEnd="@dimen/dp_15"
+                        android:paddingBottom="@dimen/dp_15">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtFaq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/faq"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivFaq"
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/arrow_next"
+                            android:tint="@color/white"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlShareApp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dp_15"
+                        android:paddingTop="@dimen/dp_20"
+                        android:paddingEnd="@dimen/dp_15"
+                        android:paddingBottom="@dimen/dp_15">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtShareApp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/share_app"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivShareApp"
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/arrow_next"
+                            android:tint="@color/white"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlHelp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dp_15"
+                        android:paddingTop="@dimen/dp_20"
+                        android:paddingEnd="@dimen/dp_15"
+                        android:paddingBottom="@dimen/dp_15">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtHelp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/help"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivHelp"
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/arrow_next"
+                            android:tint="@color/white"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlLegal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dp_15"
+                        android:paddingTop="@dimen/dp_20"
+                        android:paddingEnd="@dimen/dp_15"
+                        android:paddingBottom="@dimen/dp_15">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtLegal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/legal"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivLegal"
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/arrow_next"
+                            android:tint="@color/white"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:id="@+id/rlPrivacyPolicy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dp_15"
+                        android:paddingTop="@dimen/dp_20"
+                        android:paddingEnd="@dimen/dp_15"
+                        android:paddingBottom="@dimen/dp_15">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtPrivacyPolicy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/privacy_policy"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivPrivacyPolicy"
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/arrow_next"
+                            android:tint="@color/white"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlLogout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dp_15"
+                        android:paddingTop="@dimen/dp_20"
+                        android:paddingEnd="@dimen/dp_15"
+                        android:paddingBottom="@dimen/dp_15">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtLogout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/logout_small"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_11" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivLogout"
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/arrow_next"
+                            android:tint="@color/white"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.tigwal.ui.view_model.cancel_order.CancelOrderViewModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clr_light_white"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_20">
+
+        <include
+            android:id="@+id/toolBar"
+            layout="@layout/layout_toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvOrderDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold_midium_new"
+                        android:text="@string/order_details"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_12" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_9"
+                        android:background="@drawable/background_profile_edittext"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp_7">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvOrderId"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/order_id"
+                                    android:textColor="@color/grey"
+                                    android:textSize="@dimen/sp_10" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txt_cancel_orderId"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/dp_5"
+                                    android:fontFamily="@font/poppins_bold_midium_new"
+                                    android:maxLength="10"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/sp_10" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="@dimen/dp_5">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvTotalItems"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/total_items"
+                                    android:textColor="@color/grey"
+                                    android:textSize="@dimen/sp_10" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txt_cancel_totalOrder"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/dp_5"
+                                    android:fontFamily="@font/poppins_bold_midium_new"
+                                    android:text="@string/four"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/sp_10" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="@dimen/dp_5">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tvTotalCharges"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/total_charges"
+                                    android:textColor="@color/grey"
+                                    android:textSize="@dimen/sp_10" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txt_order_totalCharge"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/dp_5"
+                                    android:fontFamily="@font/poppins_bold_midium_new"
+                                    android:text="@string/sample_price"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/sp_10" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="@dimen/dp_20"
+                                    android:layout_height="@dimen/dp_20"
+                                    android:layout_gravity="center_vertical"
+                                    android:padding="@dimen/dp_5"
+                                    android:src="@drawable/ic_calendar"
+                                    android:tint="@color/grey" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txt_cancel_orderDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/dp_1"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/grey"
+                                    android:textSize="@dimen/sp_8" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="@dimen/dp_20"
+                                    android:layout_height="@dimen/dp_20"
+                                    android:layout_gravity="center_vertical"
+                                    android:padding="@dimen/dp_5"
+                                    android:src="@drawable/ic_clock"
+                                    android:tint="@color/grey" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txt_cancel_orderTime"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="@dimen/dp_1"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/grey"
+                                    android:textSize="@dimen/sp_8" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvReason"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:fontFamily="@font/poppins_bold_midium_new"
+                        android:text="@string/reason"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_12" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/txt_reason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_9"
+                        android:background="@drawable/border_gray_edittext_bg"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="@string/write_reason_here"
+                        android:maxHeight="@dimen/dp_100"
+                        android:minHeight="@dimen/dp_80"
+                        android:padding="@dimen/dp_10"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/sp_10" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvCancelOrderRef"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginBottom="@dimen/dp_50"
+                        android:fontFamily="@font/poppins_bold_midium_new"
+                        android:text="@string/reason"
+                        android:textSize="@dimen/sp_12" />
+
+                    <!-- android:textColor="@color/vibrant_green_pressed"-->
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_bg"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/submit"
+                        android:textSize="@dimen/sp_12"
+                        android:minHeight="@dimen/dp_40"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

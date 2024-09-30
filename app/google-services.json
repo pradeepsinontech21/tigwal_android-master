@@ -1,0 +1,94 @@
+{
+  "project_info": {
+    "project_number": "813940828149",
+    "project_id": "tigwal",
+    "storage_bucket": "tigwal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813940828149:android:6ba9b8b8314d4f5aa822bc",
+        "android_client_info": {
+          "package_name": "com.tigwal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813940828149-2g5loe73m56fp7ril2fri67vpl8ickae.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tigwal",
+            "certificate_hash": "a14bfd7f3ec809eeddb4b7d4ff6991fcc19b62fe"
+          }
+        },
+        {
+          "client_id": "813940828149-3jl1dt2am0ikjn4qog69ab63lhhqvrgp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tigwal",
+            "certificate_hash": "c02b7afca2a814e36eb1eceb180f29ae8da0a0d3"
+          }
+        },
+        {
+          "client_id": "813940828149-72beelmol26sm0hsgeaaaq3jehc47n50.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tigwal",
+            "certificate_hash": "55932e47e9a85287e7ac3b0201f62585d42733df"
+          }
+        },
+        {
+          "client_id": "813940828149-cnolmf1p3dpkcqjimh30adi9nnevdmno.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tigwal",
+            "certificate_hash": "6980d99ba035218fd3b897caa4775d7ed4d9624f"
+          }
+        },
+        {
+          "client_id": "813940828149-i64n4hmn5a8ubqv0ki4n9v5dbpo2kdtm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tigwal",
+            "certificate_hash": "f696b917c10842b08ed5b81717850c20ae0ce313"
+          }
+        },
+        {
+          "client_id": "813940828149-uqvfumhborpabvr49hs92edvuq2a3ir9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tigwal",
+            "certificate_hash": "fa49a7969b8a8f5c4f77af86e4de8bd00459470b"
+          }
+        },
+        {
+          "client_id": "813940828149-rqvfda0631n6fka5bae9nr7klnb3fbhe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG-g-CY1WUp1UQJ11CpJgSzTKDdmZKvE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813940828149-86p3l2sl0pq1uhh4vlo6nc94rl5on1lv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "813940828149-dgdtikq0ajrq6ckmrhnt1t4gc67rmtgt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tigwal"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

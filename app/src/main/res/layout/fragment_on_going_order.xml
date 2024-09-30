@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.tigwal.ui.view_model.ongoingorder.OnGoingOrderViewModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+
+    <LinearLayout
+        android:id="@+id/llloginview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolBar"
+            layout="@layout/layout_toolbar" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/llshow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtOnGoing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_8"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_button_blue_app"
+                    android:fontFamily="@font/poppins_bold_midium_new"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dp_12"
+                    android:paddingBottom="@dimen/dp_12"
+                    android:text="@string/onGoing"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_11" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtpastOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_fill_corner_gray"
+                    android:fontFamily="@font/poppins_bold_midium_new"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dp_12"
+                    android:paddingBottom="@dimen/dp_12"
+                    android:text="@string/pastOrder"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_11" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:weightSum="1">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerviewOngoing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:orientation="horizontal"
+                    android:visibility="visible" />
+
+                <include
+                    android:id="@+id/nodatafoundview"
+                    layout="@layout/layout_data_not_found" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

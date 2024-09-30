@@ -1,0 +1,48 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven {
+            url = uri("https://storage.googleapis.com/r8-releases/raw")
+        }
+    }
+
+    pluginManagement {
+        buildscript {
+            repositories {
+                mavenCentral()
+                maven {
+                    url = uri("https://storage.googleapis.com/r8-releases/raw")
+                }
+            }
+
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        flatDir {
+            dirs 'libs'
+        }
+
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.google.com'}
+        jcenter() {
+            content {
+                includeModule("cn.aigestudio.wheelpicker", "WheelPicker")
+            }
+        }
+    }
+}
+rootProject.name = "Tigwal"
+include ':app'
+include ':library'
+include ':WheelPicker'
