@@ -155,7 +155,6 @@
       <change afterPath="$PROJECT_DIR$/.idea/migrations.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/WheelPicker/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/WheelPicker/build.gradle" afterDir="false" />
@@ -1163,6 +1162,7 @@
       <change afterPath="$PROJECT_DIR$/library/src/main/res/values/styles.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1266,7 +1266,7 @@
     "cidr.known.project.marker": "true",
     "com.google.services.firebase.aqiPopupShown": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Pradeep_work/Projects/kotlin_projects/Tigwal_Android-main/Tigwal_Android-main/app",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.VCS",
